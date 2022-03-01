@@ -47,7 +47,7 @@ def update_data(context):
 def main():
     """Start the bot"""
     token = read_token("config.cfg")
-    token = os.environ.get("TOKEN")
+    token = os.environ.get("token")
     updater = Updater(token)
     
     # Dispatcher for register handlers
